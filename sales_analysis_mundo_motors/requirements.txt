@@ -1,0 +1,20 @@
+# Manejo de datos
+pandas==2.0.3
+numpy==1.24.3
+
+# Visualización de datos
+matplotlib==3.8.0
+seaborn==0.12.2
+
+# Conexión a bases de datos
+pyodbc==4.0.35
+sqlalchemy==2.0.17
+
+# Jupyter Notebooks para análisis interactivo
+jupyter==1.0.0
+
+# Pruebas
+pytest==7.4.1
+
+# Configuración
+python-dotenv==1.0.0

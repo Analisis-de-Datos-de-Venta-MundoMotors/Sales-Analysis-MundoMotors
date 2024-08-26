@@ -1,12 +1,16 @@
+import subprocess
+import sys
 from src.database_preprocessing.preprocessing import clean_data
 from src.analysis.analysis import calculate_total_revenue, get_top_products
 from src.visualization.visualization import plot_revenue_trends
 from src.utils.utils import save_to_csv
 
+
 def main():
+
     # Paso 1: Cargar y limpiar los datos
-    raw_data_path = 'sales_analysis_mundo_motors/data/raw/CarSales.csv'
-    cleaned_data_path = 'sales_analysis_mundo_motors/data/processed/CleanedCarSales.csv'
+    raw_data_path = 'data/raw/CarSales.csv'
+    cleaned_data_path = 'data/processed/CleanedCarSales.csv'
     df = clean_data(raw_data_path)
 
     # Guardar datos limpiados
